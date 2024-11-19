@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Hole : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject player,spawnpoint;
 
-    // Update is called once per frame
-    void Update()
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        player.transform.position = spawnpoint.transform.position;
     }
 }

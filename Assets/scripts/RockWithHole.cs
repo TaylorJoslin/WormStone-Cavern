@@ -1,12 +1,20 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Rock : MonoBehaviour
+public class RockWithHole : MonoBehaviour
 {
-    public Sprite smallRockSprite; // Assign in the Inspector
-    public Sprite smallerRockSprite; // Assign in the Inspector
-    public Sprite hole;
+    public Sprite smallRockSprite, smallerRockSprite,hole;
+
+    public GameObject player, spawnpoint;
+
+    public bool isHole;
+
     private int hitCount = 0;
+
+    private void Start()
+    {
+        isHole = false;
+    }
 
     public void TakeHit()
     {
@@ -14,23 +22,35 @@ public class Rock : MonoBehaviour
 
         if (hitCount == 1)
         {
-            // Change to smaller sprite
+            
             GetComponent<SpriteRenderer>().sprite = smallRockSprite;
         }
         else if (hitCount == 2)
         {
-            // Change to smaller sprite
+            
             GetComponent<SpriteRenderer>().sprite = smallerRockSprite;
         }
         else if(hitCount == 3)
         {
-            // Destroy the rock
+            isHole = true;
+
+            
             GetComponent<SpriteRenderer>().sprite = hole;
             transform.localScale = Vector3.one;
             
             CircleCollider2D circleCollider2D = GetComponent<CircleCollider2D>();
             circleCollider2D.isTrigger = true;
-            circleCollider2D.radius = 0.4523363f;
+            circleCollider2D.radius = 0.25f;
         }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isHole)
+        {
+            player.transform.position = spawnpoint.transform.position;
+        }
+        
+        
     }
 }

@@ -1,24 +1,21 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public float raycastDistance = 1f;
-    public LayerMask rockLayer;
+    [SerializeField] private float raycastDistance = 2f;
+    [SerializeField] private LayerMask rockLayer;
     private Vector2 lastDirection; // Stores the direction for the raycast
     private bool isRaycastActive = false;
 
     void Update()
     {
+        // Update movement direction
         Vector2 currentMovement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
         if (currentMovement != Vector2.zero)
         {
             lastDirection = currentMovement; // Update direction while the player is moving
-        }
-
-        if (IsInteractPressed())
-        {
-            isRaycastActive = !isRaycastActive; // Toggle raycast on/off
         }
 
         if (isRaycastActive)
@@ -27,10 +24,12 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    private bool IsInteractPressed()
+    public void Attack(InputAction.CallbackContext context)
     {
-        // Replace with your Input System logic
-        return Input.GetKeyDown(KeyCode.E); // Placeholder for testing
+        if (context.performed) // Ensure the action triggers only on press
+        {
+            isRaycastActive = !isRaycastActive; // Toggle the raycast
+        }
     }
 
     private void MaintainRaycast()
@@ -39,7 +38,18 @@ public class PlayerInteraction : MonoBehaviour
 
         if (hit.collider != null)
         {
-            Rock rock = hit.collider.GetComponent<Rock>();
+            RockWithHole rock = hit.collider.GetComponent<RockWithHole>();
+            if (rock != null)
+            {
+                rock.TakeHit();
+                isRaycastActive = false; // Turn off raycast after a successful interaction
+            }
+        }
+
+        //dectects if a rock is infront of the player and hits it if it is a normal rock
+        if (hit.collider != null)
+        {
+            NormalRock rock = hit.collider.GetComponent<NormalRock>();
             if (rock != null)
             {
                 rock.TakeHit();
