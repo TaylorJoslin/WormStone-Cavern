@@ -6,6 +6,8 @@ public class RockHole : MonoBehaviour
 
     public GameObject player, spawnpoint;
 
+    public Animator animator;
+
     public bool isHole;
 
     private int hitCount = 0;
@@ -39,7 +41,7 @@ public class RockHole : MonoBehaviour
 
             CircleCollider2D circleCollider2D = GetComponent<CircleCollider2D>();
             circleCollider2D.isTrigger = true;
-            circleCollider2D.radius = 0.25f;
+            circleCollider2D.radius = 0.3f;
         }
 
         StartCoroutine(HitCooldown()); // Start cooldown
