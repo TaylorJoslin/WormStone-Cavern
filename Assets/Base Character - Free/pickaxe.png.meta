@@ -1,103 +1,79 @@
 fileFormatVersion: 2
-guid: 16b2d088cc1dd294e8def0edcb2f54cf
+guid: 3a06fe3a9817ba242893da6e64a624d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8296385383580801948
-    second: walk_0
+      213: 8959118705387878318
+    second: pickaxe_0
   - first:
-      213: 3218353051568008401
-    second: walk_1
+      213: -690277927211705776
+    second: pickaxe_1
   - first:
-      213: 6971375644381031630
-    second: walk_2
+      213: -2334973714226403527
+    second: pickaxe_2
   - first:
-      213: -3714987382563562326
-    second: walk_3
+      213: 4953346704794499982
+    second: pickaxe_3
   - first:
-      213: -2044624726750869082
-    second: walk_4
+      213: -3330331955690406510
+    second: pickaxe_4
   - first:
-      213: -1800561202758830752
-    second: walk_5
+      213: 8813524075066335488
+    second: pickaxe_5
   - first:
-      213: -7072565547094396234
-    second: walk_6
+      213: -1418398194584717504
+    second: pickaxe_6
   - first:
-      213: -6780060589664581786
-    second: walk_7
+      213: -369263479173133787
+    second: pickaxe_7
   - first:
-      213: 2251703588619409307
-    second: walk_8
+      213: 3991527062789968029
+    second: pickaxe_8
   - first:
-      213: -5224373444711448209
-    second: walk_9
+      213: -2397177330297986333
+    second: pickaxe_9
   - first:
-      213: 8428286525173097495
-    second: walk_10
+      213: -5547685438986170639
+    second: pickaxe_10
   - first:
-      213: -2787140197056013511
-    second: walk_11
+      213: -3089572058576509852
+    second: pickaxe_11
   - first:
-      213: -8260419473583676578
-    second: walk_12
+      213: -2851459719888957885
+    second: pickaxe_12
   - first:
-      213: 6000581766031926614
-    second: walk_13
+      213: -2359800261918723793
+    second: pickaxe_13
   - first:
-      213: -6959915571989194883
-    second: walk_14
+      213: 5618600304162787819
+    second: pickaxe_14
   - first:
-      213: 960921020097805623
-    second: walk_15
+      213: -2300267739364934652
+    second: pickaxe_15
   - first:
-      213: -3336701548478254045
-    second: walk_16
+      213: -3599147523972164951
+    second: pickaxe_16
   - first:
-      213: -5400053455435091454
-    second: walk_17
+      213: 3983908921234010452
+    second: pickaxe_17
   - first:
-      213: 4408406346810168619
-    second: walk_18
+      213: 1899398049595399791
+    second: pickaxe_18
   - first:
-      213: -485737157877676475
-    second: walk_19
+      213: 3097713763108226860
+    second: pickaxe_19
   - first:
-      213: -5106187503225981072
-    second: walk_20
+      213: 7780742219250267424
+    second: pickaxe_20
   - first:
-      213: 4312765686203540801
-    second: walk_21
+      213: 8310516054090290913
+    second: pickaxe_21
   - first:
-      213: 5251978615751408329
-    second: walk_22
+      213: 317880208702612327
+    second: pickaxe_22
   - first:
-      213: 2965599932687856292
-    second: walk_23
-  - first:
-      213: 2365076705713957727
-    second: walk_24
-  - first:
-      213: 6256131582671704638
-    second: walk_25
-  - first:
-      213: 7208522903439339441
-    second: walk_26
-  - first:
-      213: -8803371887732516606
-    second: walk_27
-  - first:
-      213: 5930265372572760309
-    second: walk_28
-  - first:
-      213: -5586679451514871875
-    second: walk_29
-  - first:
-      213: 992266644526108889
-    second: walk_30
-  - first:
-      213: 366874253998779255
-    second: walk_31
+      213: 3038850734939667645
+    second: pickaxe_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -219,13 +195,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_0
+      name: pickaxe_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 272
-        width: 16
-        height: 16
+        x: 0
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4646ce323715ddc80800000000000000
-      internalID: -8296385383580801948
+      spriteID: ea7b33fbefe255c70800000000000000
+      internalID: 8959118705387878318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_1
+      name: pickaxe_1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 272
-        width: 16
-        height: 16
+        x: 80
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1dc61808c03e9ac20800000000000000
-      internalID: 3218353051568008401
+      spriteID: 05ad048e1e3ab66f0800000000000000
+      internalID: -690277927211705776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_2
+      name: pickaxe_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 272
-        width: 16
-        height: 16
+        x: 160
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecc242f663d4fb060800000000000000
-      internalID: 6971375644381031630
+      spriteID: 93729a337c1889fd0800000000000000
+      internalID: -2334973714226403527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_3
+      name: pickaxe_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 272
-        width: 16
-        height: 16
+        x: 240
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aac9d3d88a6b17cc0800000000000000
-      internalID: -3714987382563562326
+      spriteID: e8bb0a48592ddb440800000000000000
+      internalID: 4953346704794499982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_4
+      name: pickaxe_4
       rect:
         serializedVersion: 2
-        x: 352
-        y: 272
-        width: 16
-        height: 16
+        x: 320
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a9c807d4a800a3e0800000000000000
-      internalID: -2044624726750869082
+      spriteID: 29df0fc2bb848c1d0800000000000000
+      internalID: -3330331955690406510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_5
+      name: pickaxe_5
       rect:
         serializedVersion: 2
-        x: 432
-        y: 272
-        width: 16
-        height: 16
+        x: 400
+        y: 240
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,20 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 065b539302f1307e0800000000000000
-      internalID: -1800561202758830752
+      spriteID: 001aea1437def4a70800000000000000
+      internalID: 8813524075066335488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_6
+      name: pickaxe_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 272
-        width: 16
-        height: 16
+        x: 0
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,20 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b2b5c26b1339dd90800000000000000
-      internalID: -7072565547094396234
+      spriteID: 047f8b56b56d05ce0800000000000000
+      internalID: -1418398194584717504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_7
+      name: pickaxe_7
       rect:
         serializedVersion: 2
-        x: 592
-        y: 272
-        width: 16
-        height: 16
+        x: 80
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,20 +364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 667ca65e0d268e1a0800000000000000
-      internalID: -6780060589664581786
+      spriteID: 52a4c5772dc10eaf0800000000000000
+      internalID: -369263479173133787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_8
+      name: pickaxe_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 16
-        height: 16
+        x: 160
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,20 +386,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b97d12bdb78af3f10800000000000000
-      internalID: 2251703588619409307
+      spriteID: d9054f037b0c46730800000000000000
+      internalID: 3991527062789968029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_9
+      name: pickaxe_9
       rect:
         serializedVersion: 2
-        x: 112
-        y: 192
-        width: 16
-        height: 16
+        x: 240
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,20 +408,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f618dfd280c4f77b0800000000000000
-      internalID: -5224373444711448209
+      spriteID: 3e228fb3be38bbed0800000000000000
+      internalID: -2397177330297986333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_10
+      name: pickaxe_10
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 16
-        height: 16
+        x: 320
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,20 +430,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 714672e80f947f470800000000000000
-      internalID: 8428286525173097495
+      spriteID: 1fe4f937c79a203b0800000000000000
+      internalID: -5547685438986170639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_11
+      name: pickaxe_11
       rect:
         serializedVersion: 2
-        x: 272
-        y: 192
-        width: 16
-        height: 16
+        x: 400
+        y: 160
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -476,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93b9347f1c61259d0800000000000000
-      internalID: -2787140197056013511
+      spriteID: 464239cf492af15d0800000000000000
+      internalID: -3089572058576509852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_12
+      name: pickaxe_12
       rect:
         serializedVersion: 2
-        x: 352
-        y: 192
-        width: 16
-        height: 16
+        x: 0
+        y: 80
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,20 +474,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e53635d11481d5d80800000000000000
-      internalID: -8260419473583676578
+      spriteID: 34e0fa01e749d68d0800000000000000
+      internalID: -2851459719888957885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_13
+      name: pickaxe_13
       rect:
         serializedVersion: 2
-        x: 432
-        y: 192
-        width: 16
-        height: 16
+        x: 80
+        y: 80
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,20 +496,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 655e402e259564350800000000000000
-      internalID: 6000581766031926614
+      spriteID: f21f57f1a2e404fd0800000000000000
+      internalID: -2359800261918723793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_14
+      name: pickaxe_14
       rect:
         serializedVersion: 2
-        x: 512
-        y: 192
-        width: 16
-        height: 16
+        x: 160
+        y: 80
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,20 +518,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d77dfd899a9696f90800000000000000
-      internalID: -6959915571989194883
+      spriteID: be15680453749fd40800000000000000
+      internalID: 5618600304162787819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_15
+      name: pickaxe_15
       rect:
         serializedVersion: 2
-        x: 592
-        y: 192
-        width: 16
-        height: 16
+        x: 240
+        y: 80
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -564,20 +540,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73db22c9390e55d00800000000000000
-      internalID: 960921020097805623
+      spriteID: 40cbcdaadaec310e0800000000000000
+      internalID: -2300267739364934652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_16
+      name: pickaxe_16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
-        width: 16
-        height: 16
+        x: 320
+        y: 80
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,20 +562,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3243579ce97a1b1d0800000000000000
-      internalID: -3336701548478254045
+      spriteID: 9a2996365624d0ec0800000000000000
+      internalID: -3599147523972164951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_17
+      name: pickaxe_17
       rect:
         serializedVersion: 2
-        x: 112
-        y: 112
-        width: 16
-        height: 16
+        x: 400
+        y: 80
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -608,20 +584,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 202bba43ef72f05b0800000000000000
-      internalID: -5400053455435091454
+      spriteID: 451b9a36e00b94730800000000000000
+      internalID: 3983908921234010452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_18
+      name: pickaxe_18
       rect:
         serializedVersion: 2
-        x: 192
-        y: 112
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,20 +606,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b259237373ecd2d30800000000000000
-      internalID: 4408406346810168619
+      spriteID: f6e143176740c5a10800000000000000
+      internalID: 1899398049595399791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_19
+      name: pickaxe_19
       rect:
         serializedVersion: 2
-        x: 272
-        y: 112
-        width: 16
-        height: 16
+        x: 80
+        y: 0
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,20 +628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5464e72e0a05249f0800000000000000
-      internalID: -485737157877676475
+      spriteID: c2787e1514a4dfa20800000000000000
+      internalID: 3097713763108226860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_20
+      name: pickaxe_20
       rect:
         serializedVersion: 2
-        x: 352
-        y: 112
-        width: 16
-        height: 16
+        x: 160
+        y: 0
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -674,20 +650,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0773da1058d2329b0800000000000000
-      internalID: -5106187503225981072
+      spriteID: 025fb4303dfbafb60800000000000000
+      internalID: 7780742219250267424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_21
+      name: pickaxe_21
       rect:
         serializedVersion: 2
-        x: 432
-        y: 112
-        width: 16
-        height: 16
+        x: 240
+        y: 0
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,20 +672,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145e7a5aa850adb30800000000000000
-      internalID: 4312765686203540801
+      spriteID: 1e69b38f152e45370800000000000000
+      internalID: 8310516054090290913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_22
+      name: pickaxe_22
       rect:
         serializedVersion: 2
-        x: 512
-        y: 112
-        width: 16
-        height: 16
+        x: 320
+        y: 0
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -718,20 +694,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ca7fcf89b6c2e840800000000000000
-      internalID: 5251978615751408329
+      spriteID: 763a8d89d56596400800000000000000
+      internalID: 317880208702612327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_23
+      name: pickaxe_23
       rect:
         serializedVersion: 2
-        x: 592
-        y: 112
-        width: 16
-        height: 16
+        x: 400
+        y: 0
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -740,184 +716,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a238c52d6de72920800000000000000
-      internalID: 2965599932687856292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_24
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5ba1aeabb072d020800000000000000
-      internalID: 2365076705713957727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_25
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e32df3d278e32d650800000000000000
-      internalID: 6256131582671704638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_26
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bfe4c66361d90460800000000000000
-      internalID: 7208522903439339441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_27
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2091b0e09e324d580800000000000000
-      internalID: -8803371887732516606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_28
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f8bffbbfe88c4250800000000000000
-      internalID: 5930265372572760309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_29
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbf5b7a63a02872b0800000000000000
-      internalID: -5586679451514871875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_30
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d09275814d35cd00800000000000000
-      internalID: 992266644526108889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_31
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77b65d2b036671500800000000000000
-      internalID: 366874253998779255
+      spriteID: dbc738594aa2c2a20800000000000000
+      internalID: 3038850734939667645
       vertices: []
       indices: 
       edges: []
@@ -926,7 +726,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 75283f0590fac3e40b6f09bc93c27ea8
+    spriteID: 9771a9d9767cba24b8bc48a6d604e9e4
     internalID: 0
     vertices: []
     indices: 
@@ -936,38 +736,30 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk_0: -8296385383580801948
-      walk_1: 3218353051568008401
-      walk_10: 8428286525173097495
-      walk_11: -2787140197056013511
-      walk_12: -8260419473583676578
-      walk_13: 6000581766031926614
-      walk_14: -6959915571989194883
-      walk_15: 960921020097805623
-      walk_16: -3336701548478254045
-      walk_17: -5400053455435091454
-      walk_18: 4408406346810168619
-      walk_19: -485737157877676475
-      walk_2: 6971375644381031630
-      walk_20: -5106187503225981072
-      walk_21: 4312765686203540801
-      walk_22: 5251978615751408329
-      walk_23: 2965599932687856292
-      walk_24: 2365076705713957727
-      walk_25: 6256131582671704638
-      walk_26: 7208522903439339441
-      walk_27: -8803371887732516606
-      walk_28: 5930265372572760309
-      walk_29: -5586679451514871875
-      walk_3: -3714987382563562326
-      walk_30: 992266644526108889
-      walk_31: 366874253998779255
-      walk_4: -2044624726750869082
-      walk_5: -1800561202758830752
-      walk_6: -7072565547094396234
-      walk_7: -6780060589664581786
-      walk_8: 2251703588619409307
-      walk_9: -5224373444711448209
+      pickaxe_0: 8959118705387878318
+      pickaxe_1: -690277927211705776
+      pickaxe_10: -5547685438986170639
+      pickaxe_11: -3089572058576509852
+      pickaxe_12: -2851459719888957885
+      pickaxe_13: -2359800261918723793
+      pickaxe_14: 5618600304162787819
+      pickaxe_15: -2300267739364934652
+      pickaxe_16: -3599147523972164951
+      pickaxe_17: 3983908921234010452
+      pickaxe_18: 1899398049595399791
+      pickaxe_19: 3097713763108226860
+      pickaxe_2: -2334973714226403527
+      pickaxe_20: 7780742219250267424
+      pickaxe_21: 8310516054090290913
+      pickaxe_22: 317880208702612327
+      pickaxe_23: 3038850734939667645
+      pickaxe_3: 4953346704794499982
+      pickaxe_4: -3330331955690406510
+      pickaxe_5: 8813524075066335488
+      pickaxe_6: -1418398194584717504
+      pickaxe_7: -369263479173133787
+      pickaxe_8: 3991527062789968029
+      pickaxe_9: -2397177330297986333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

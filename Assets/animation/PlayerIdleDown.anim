@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerMining
+  m_Name: PlayerIdleDown
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 8959118705387878318, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
+      value: {fileID: 512795395688303107, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
     - time: 0.016666668
-      value: {fileID: -690277927211705776, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
+      value: {fileID: 5667770778836351527, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
     - time: 0.033333335
-      value: {fileID: -2334973714226403527, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
+      value: {fileID: -1480364998338425778, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
     - time: 0.05
-      value: {fileID: 4953346704794499982, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - time: 0.06666667
-      value: {fileID: -3330331955690406510, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - time: 0.083333336
-      value: {fileID: 8813524075066335488, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
+      value: {fileID: -189419392851352084, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -54,18 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 8959118705387878318, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - {fileID: -690277927211705776, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - {fileID: -2334973714226403527, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - {fileID: 4953346704794499982, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - {fileID: -3330331955690406510, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
-    - {fileID: 8813524075066335488, guid: 3a06fe3a9817ba242893da6e64a624d8, type: 3}
+    - {fileID: 512795395688303107, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
+    - {fileID: 5667770778836351527, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
+    - {fileID: -1480364998338425778, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
+    - {fileID: -189419392851352084, guid: 64abf78c9008a7c4cb9508ea644877e9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.1
+    m_StopTime: 0.06666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -84,11 +78,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.083333336
-    functionName: MineRock
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

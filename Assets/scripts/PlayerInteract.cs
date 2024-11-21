@@ -3,10 +3,23 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    [SerializeField] private float raycastDistance = 2f;
-    [SerializeField] private LayerMask rockLayer;
-    private Vector2 lastDirection; // Stores the direction for the raycast
-    private bool isRaycastActive = false;
+    public float raycastDistance = 2f;
+    public LayerMask rockLayer;
+
+    private Vector2 lastDirection;
+    private object currentTargetRock; // Store reference to either NormalRock or RockHole
+
+    public Animator ani; // Animator for mining animations
+
+    private PlayerInput playerInput;
+
+    void Start()
+    {
+        playerInput = GetComponent<PlayerInput>();
+
+        // Bind the Attack action
+        playerInput.actions["Attack"].performed += OnAttackPerformed;
+    }
 
     void Update()
     {
@@ -15,56 +28,57 @@ public class PlayerInteraction : MonoBehaviour
 
         if (currentMovement != Vector2.zero)
         {
-            lastDirection = currentMovement; // Update direction while the player is moving
-        }
-
-        if (isRaycastActive)
-        {
-            MaintainRaycast();
+            lastDirection = currentMovement;
         }
     }
 
-    public void Attack(InputAction.CallbackContext context)
+    private void OnAttackPerformed(InputAction.CallbackContext context)
     {
-        if (context.performed) // Ensure the action triggers only on press
-        {
-            isRaycastActive = !isRaycastActive; // Toggle the raycast
-        }
-    }
-
-    private void MaintainRaycast()
-    {
+        // Perform raycast
         RaycastHit2D hit = Physics2D.Raycast(transform.position, lastDirection, raycastDistance, rockLayer);
 
         if (hit.collider != null)
         {
-            RockWithHole rock = hit.collider.GetComponent<RockWithHole>();
-            if (rock != null)
-            {
-                rock.TakeHit();
-                isRaycastActive = false; // Turn off raycast after a successful interaction
-            }
-        }
+            RockHole rockHole = hit.collider.GetComponent<RockHole>();
+            NormalRock normalRock = hit.collider.GetComponent<NormalRock>();
 
-        //dectects if a rock is infront of the player and hits it if it is a normal rock
-        if (hit.collider != null)
-        {
-            NormalRock rock = hit.collider.GetComponent<NormalRock>();
-            if (rock != null)
+            if (rockHole != null)
             {
-                rock.TakeHit();
-                isRaycastActive = false; // Turn off raycast after a successful interaction
+                currentTargetRock = rockHole;
+                ani.SetBool("Mining", true); // Start mining animation
+            }
+            else if (normalRock != null)
+            {
+                currentTargetRock = normalRock;
+                ani.SetBool("Mining", true); // Start mining animation
             }
         }
     }
 
-    void OnDrawGizmos()
+    // Called via Animation Event
+    public void MineRock()
     {
-        Gizmos.color = Color.red;
-
-        if (isRaycastActive)
+        if (currentTargetRock != null)
         {
-            Gizmos.DrawLine(transform.position, transform.position + (Vector3)(lastDirection * raycastDistance));
+            if (currentTargetRock is RockHole)
+            {
+                ((RockHole)currentTargetRock).TakeHit();
+            }
+            else if (currentTargetRock is NormalRock)
+            {
+                ((NormalRock)currentTargetRock).TakeHit();
+            }
+
+            ani.SetBool("Mining", false); // Reset animation state
+            currentTargetRock = null; // Clear the target
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (playerInput != null)
+        {
+            playerInput.actions["Attack"].performed -= OnAttackPerformed;
         }
     }
 }
