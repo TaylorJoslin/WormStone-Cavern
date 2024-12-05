@@ -1,5 +1,10 @@
 List of new features, bug fixes and improvements
 
+# Version 1.3.10
+* Hotfix for type resolving
+* Usability improvements for VSCode exporter
+* More filters for expected error logs
+
 # Version 1.3.9
 * Hotfix for Unity sink
 

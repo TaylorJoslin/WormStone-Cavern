@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NormalRock : MonoBehaviour
 {
-    public Sprite smallRockSprite, smallerRockSprite;
+    
 
     private int hitCount = 0;
     private bool canTakeHit = true; // Cooldown flag
@@ -17,16 +17,9 @@ public class NormalRock : MonoBehaviour
 
         if (hitCount == 1)
         {
-            GetComponent<SpriteRenderer>().sprite = smallRockSprite;
-        }
-        else if (hitCount == 2)
-        {
-            GetComponent<SpriteRenderer>().sprite = smallerRockSprite;
-        }
-        else if (hitCount == 3)
-        {
             Destroy(gameObject); // Destroy the rock
         }
+      
 
         StartCoroutine(HitCooldown());
     }

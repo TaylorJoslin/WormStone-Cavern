@@ -8,16 +8,13 @@ public class RockHole : MonoBehaviour
 
     public Animator animator;
 
-    public bool isHole;
+    
 
     private int hitCount = 0;
     private bool canTakeHit = true; // Cooldown flag
     public float hitCooldown = 1f; // Cooldown duration in seconds
 
-    private void Start()
-    {
-        isHole = false;
-    }
+   
 
     public void TakeHit()
     {
@@ -27,22 +24,15 @@ public class RockHole : MonoBehaviour
 
         if (hitCount == 1)
         {
-            GetComponent<SpriteRenderer>().sprite = smallRockSprite;
-        }
-        else if (hitCount == 2)
-        {
-            GetComponent<SpriteRenderer>().sprite = smallerRockSprite;
-        }
-        else if (hitCount == 3)
-        {
-            isHole = true;
+            
             GetComponent<SpriteRenderer>().sprite = hole;
             transform.localScale = Vector3.one;
 
             CircleCollider2D circleCollider2D = GetComponent<CircleCollider2D>();
-            circleCollider2D.isTrigger = true;
+            
             circleCollider2D.radius = 0.3f;
         }
+      
 
         StartCoroutine(HitCooldown()); // Start cooldown
     }
@@ -54,13 +44,7 @@ public class RockHole : MonoBehaviour
         canTakeHit = true;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (isHole)
-        {
-            player.transform.position = spawnpoint.transform.position;
-        }
-    }
+  
 
 
 }
