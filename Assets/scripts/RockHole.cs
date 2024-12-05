@@ -30,7 +30,7 @@ public class RockHole : MonoBehaviour
 
             CircleCollider2D circleCollider2D = GetComponent<CircleCollider2D>();
             
-            circleCollider2D.radius = 0.3f;
+            circleCollider2D.radius = 0.35f;
         }
       
 
