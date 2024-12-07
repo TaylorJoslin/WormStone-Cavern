@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6413953156361269131}
   - component: {fileID: 4786642815150440082}
   - component: {fileID: 2795849040260438638}
-  - component: {fileID: 6938688779737851226}
+  - component: {fileID: 5007036086389811409}
   m_Layer: 6
-  m_Name: worm
+  m_Name: WormBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.393, y: -2.636, z: 0}
-  m_LocalScale: {x: 4.15, y: 4.15, z: 4.15}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1915958898771475033}
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 5122701829642843209, guid: 46f7527b9a43dc142b556bbadae78c3b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.93900895, g: 1, b: 0.7216981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -128,11 +128,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a76b49acc747994ebc5da7c3f99cc2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 485084050572089083, guid: f236153261af3b347a487d46fc43bfbb, type: 3}
+  projectilePrefab: {fileID: 485084050572089083, guid: e7a1672881792164ca9bd1f1639b41b6, type: 3}
   firePoint: {fileID: 5403960974088064316}
-  projectileSpeed: 5
-  fireRate: 1.5
-  attackRange: 5
+  projectileSpeed: 10
+  fireRate: 2
+  attackRange: 20
   hitCooldown: 1
 --- !u!58 &2795849040260438638
 CircleCollider2D:
@@ -170,7 +170,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.0031062206, y: -0.06419526}
   m_Radius: 0.060327254
---- !u!114 &6938688779737851226
+--- !u!114 &5007036086389811409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,10 +179,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 642919032931753828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 903387ecf86a159478f8a1104173cc49, type: 3}
+  m_Script: {fileID: 11500000, guid: b3206303a02bc684c8d0c053f80c8fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 5007036086389811409, guid: e32bd848a3f545641bdf677eb59afc64, type: 3}
+  wormPrefab: {fileID: 642919032931753828, guid: 1e5d4e4c72c19034fbef265f0b0accf2, type: 3}
+  spawnAreaSize: {x: 25.5, y: 14.5}
+  spawnAreaOffset: {x: -0.12, y: -4.1}
+  maxWorms: 5
+  spawnInterval: 3
+  bossHP: 100
+  hpLossPerWorm: 10
+  boss: {fileID: 3128320155757452775}
 --- !u!1 &5028927524670630754
 GameObject:
   m_ObjectHideFlags: 0
