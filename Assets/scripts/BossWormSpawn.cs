@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
 public class BossWormSpawn : MonoBehaviour
@@ -17,12 +16,19 @@ public class BossWormSpawn : MonoBehaviour
 
     [Header("References")]
     public Transform boss; // Boss GameObject to spawn around
+    public GameObject winScreen; // Reference to the win screen (UI Panel)
 
     private int currentWormCount = 0;
 
     void Start()
     {
         StartCoroutine(SpawnWorms());
+
+        // Ensure the win screen is hidden at the start
+        if (winScreen != null)
+        {
+            winScreen.SetActive(false);
+        }
     }
 
     private IEnumerator SpawnWorms()
@@ -51,7 +57,7 @@ public class BossWormSpawn : MonoBehaviour
         GameObject worm = Instantiate(wormPrefab, spawnPosition, Quaternion.identity);
 
         // Assign a script to inform this spawner when the worm is destroyed
-        Worm wormScript = worm.GetComponent<Worm>();
+        WormShooting wormScript = worm.GetComponent<WormShooting>();
         if (wormScript != null)
         {
             wormScript.spawner = this;
@@ -64,6 +70,7 @@ public class BossWormSpawn : MonoBehaviour
     {
         currentWormCount--;
         DecreaseBossHP();
+        Debug.Log($"Current Boss HP: {bossHP}");
     }
 
     private void DecreaseBossHP()
@@ -80,7 +87,16 @@ public class BossWormSpawn : MonoBehaviour
     private void OnBossDefeated()
     {
         Debug.Log("Boss defeated!");
-        // Add additional logic for boss defeat (e.g., animations, game over screen)
+
+        // Show the "You Win" screen
+        if (winScreen != null)
+        {
+            winScreen.SetActive(true);
+        }
+
+        // Optionally, stop spawning worms
+        StopAllCoroutines();
+        Destroy(gameObject);
     }
 
     // Draw the spawn area in the editor

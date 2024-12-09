@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   m_Sprite: {fileID: 5122701829642843209, guid: 46f7527b9a43dc142b556bbadae78c3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -128,11 +128,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a76b49acc747994ebc5da7c3f99cc2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPickupPrefab: {fileID: 2640766257685142671, guid: fcab4f9094c91ec4ead5b386005a3924, type: 3}
+  spawnChance: 0.3
   projectilePrefab: {fileID: 485084050572089083, guid: f236153261af3b347a487d46fc43bfbb, type: 3}
   firePoint: {fileID: 5403960974088064316}
   projectileSpeed: 5
   fireRate: 1.5
   attackRange: 5
+  spawner: {fileID: 5007036086389811409, guid: e32bd848a3f545641bdf677eb59afc64, type: 3}
   hitCooldown: 1
 --- !u!58 &2795849040260438638
 CircleCollider2D:
@@ -177,7 +180,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642919032931753828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 903387ecf86a159478f8a1104173cc49, type: 3}
   m_Name: 

@@ -3,11 +3,16 @@ using System.Collections;
 
 public class WormShooting : MonoBehaviour
 {
+    [Header("Health Pickup Settings")]
+    public GameObject healthPickupPrefab; // Prefab for the health pickup
+    public float spawnChance = 0.1f;      // 10% chance to spawn the health pickup
+
     public GameObject projectilePrefab; // The projectile prefab
     public Transform firePoint;         // The position from where the projectile will be fired
     public float projectileSpeed = 5f;  // Speed of the projectile
     public float fireRate = 1f;         // Time interval between shots
     public float attackRange = 5f;      // Attack range of the worm
+    public BossWormSpawn spawner;
 
     private float nextFireTime = 0f;
 
@@ -39,9 +44,8 @@ public class WormShooting : MonoBehaviour
 
         if (hitCount == 1)
         {
-            Destroy(gameObject); // Destroy 
+            Die();
         }
-
 
         StartCoroutine(HitCooldown());
     }
@@ -66,6 +70,31 @@ public class WormShooting : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = direction * projectileSpeed;
+        }
+    }
+
+    public void Die()
+    {
+        Debug.Log("Worm destroyed. Informing spawner.");
+
+        // Attempt to spawn a health pickup with the given spawn chance
+        SpawnHealthPickup();
+
+        if (spawner != null)
+        {
+            spawner.OnWormDestroyed();
+        }
+
+        Destroy(gameObject); // Destroy the worm GameObject
+    }
+
+    private void SpawnHealthPickup()
+    {
+        if (healthPickupPrefab != null && Random.value < spawnChance)
+        {
+            // Spawn the health pickup at the worm's position
+            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+            Debug.Log("Health pickup spawned!");
         }
     }
 

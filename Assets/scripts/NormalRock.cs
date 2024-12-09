@@ -3,7 +3,9 @@ using System.Collections;
 
 public class NormalRock : MonoBehaviour
 {
-    
+    [Header("Health Pickup Settings")]
+    public GameObject healthPickupPrefab; // Prefab for the health pickup
+    public float spawnChance = 0.5f;      // 50% chance to spawn the health pickup
 
     private int hitCount = 0;
     private bool canTakeHit = true; // Cooldown flag
@@ -17,9 +19,9 @@ public class NormalRock : MonoBehaviour
 
         if (hitCount == 1)
         {
+            SpawnHealthPickup(); // Attempt to spawn the health pickup
             Destroy(gameObject); // Destroy the rock
         }
-      
 
         StartCoroutine(HitCooldown());
     }
@@ -29,5 +31,13 @@ public class NormalRock : MonoBehaviour
         canTakeHit = false; // Disable further hits
         yield return new WaitForSeconds(hitCooldown); // Wait for cooldown duration
         canTakeHit = true; // Enable hits again
+    }
+
+    private void SpawnHealthPickup()
+    {
+        if (healthPickupPrefab != null && Random.value < spawnChance)
+        {
+            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+        }
     }
 }

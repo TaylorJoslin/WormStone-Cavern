@@ -8,8 +8,10 @@ public class HealthManager : MonoBehaviour
     public Sprite[] heartSprites; // Array of heart sprites (full, 3/4, 1/2, 1/4, empty)
     public GameObject gameOverPanel; // The panel containing Game Over UI elements
 
-    private int currentHealth = 8; // Total of 4 quarters of a heart
+    private int currentHealth = 9; // Total of 4 quarters of a heart
+    private int maxHealth = 9;     // Max health of the player
 
+   
     void Start()
     {
         // Ensure the Game Over panel is initially hidden
@@ -17,6 +19,8 @@ public class HealthManager : MonoBehaviour
         {
             gameOverPanel.SetActive(false);
         }
+        // Set the initial health image to the correct sprite
+        UpdateHeartDisplay();
     }
 
     public void TakeDamage()
@@ -33,10 +37,22 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+    public void HealHP()
+    {
+        if (currentHealth < maxHealth) // Check if health is less than the max
+        {
+            currentHealth++;
+            UpdateHeartDisplay();
+        }
+    }
+
     void UpdateHeartDisplay()
     {
-        // Update the heart image based on the remaining health
-        heartImage.sprite = heartSprites[currentHealth];
+        // Check if heartSprites has enough elements, then update the heart image
+        if (heartSprites.Length >= currentHealth)
+        {
+            heartImage.sprite = heartSprites[currentHealth];
+        }
     }
 
     void GameOver()
