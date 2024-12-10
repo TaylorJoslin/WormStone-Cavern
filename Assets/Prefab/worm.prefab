@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPickupPrefab: {fileID: 2640766257685142671, guid: fcab4f9094c91ec4ead5b386005a3924, type: 3}
-  spawnChance: 0.3
+  spawnChance: 0.5
   projectilePrefab: {fileID: 485084050572089083, guid: f236153261af3b347a487d46fc43bfbb, type: 3}
   firePoint: {fileID: 5403960974088064316}
   projectileSpeed: 5
@@ -137,6 +137,8 @@ MonoBehaviour:
   attackRange: 5
   spawner: {fileID: 5007036086389811409, guid: e32bd848a3f545641bdf677eb59afc64, type: 3}
   hitCooldown: 1
+  shootSound: {fileID: 8300000, guid: bfc613254aa38524e8b0eae886bb922e, type: 3}
+  dieSound: {fileID: 8300000, guid: 5a6036188871ac44a8c1fe8012a8f9b8, type: 3}
 --- !u!58 &2795849040260438638
 CircleCollider2D:
   m_ObjectHideFlags: 0

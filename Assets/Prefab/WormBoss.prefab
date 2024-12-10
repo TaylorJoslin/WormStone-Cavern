@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 234640570828944488}
   - component: {fileID: 6413953156361269131}
   - component: {fileID: 4786642815150440082}
+  - component: {fileID: 7691635971993196878}
   - component: {fileID: 2795849040260438638}
   - component: {fileID: 5007036086389811409}
   m_Layer: 6
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642919032931753828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a76b49acc747994ebc5da7c3f99cc2c, type: 3}
   m_Name: 
@@ -137,6 +138,30 @@ MonoBehaviour:
   attackRange: 20
   spawner: {fileID: 0}
   hitCooldown: 1
+  shootSound: {fileID: 8300000, guid: bfc613254aa38524e8b0eae886bb922e, type: 3}
+  dieSound: {fileID: 8300000, guid: 5a6036188871ac44a8c1fe8012a8f9b8, type: 3}
+--- !u!114 &7691635971993196878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642919032931753828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1224435414e9bde498bef23176dd785a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPickupPrefab: {fileID: 0}
+  spawnChance: 0.1
+  projectilePrefab: {fileID: 485084050572089083, guid: e7a1672881792164ca9bd1f1639b41b6, type: 3}
+  firePoint: {fileID: 5403960974088064316}
+  projectileSpeed: 5
+  fireRate: 2
+  attackRange: 20
+  spawner: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: bfc613254aa38524e8b0eae886bb922e, type: 3}
+  dieSound: {fileID: 8300000, guid: 5a6036188871ac44a8c1fe8012a8f9b8, type: 3}
 --- !u!58 &2795849040260438638
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -193,6 +218,7 @@ MonoBehaviour:
   bossHP: 100
   hpLossPerWorm: 10
   boss: {fileID: 3128320155757452775}
+  winScreen: {fileID: 0}
 --- !u!1 &5028927524670630754
 GameObject:
   m_ObjectHideFlags: 0

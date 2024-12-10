@@ -20,6 +20,10 @@ public class WormShooting : MonoBehaviour
     private bool canTakeHit = true; // Cooldown flag
     public float hitCooldown = 1f; // Cooldown duration in seconds
 
+    // Reference to the sound clips
+    public AudioClip shootSound;
+    public AudioClip dieSound;
+
     void Update()
     {
         // Find the player by tag
@@ -71,11 +75,17 @@ public class WormShooting : MonoBehaviour
         {
             rb.linearVelocity = direction * projectileSpeed;
         }
+
+        // Play the shooting sound
+        PlayShootSound();
     }
 
     public void Die()
     {
         Debug.Log("Worm destroyed. Informing spawner.");
+
+        // Play the death sound
+        PlayDieSound();
 
         // Attempt to spawn a health pickup with the given spawn chance
         SpawnHealthPickup();
@@ -95,6 +105,32 @@ public class WormShooting : MonoBehaviour
             // Spawn the health pickup at the worm's position
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
             Debug.Log("Health pickup spawned!");
+        }
+    }
+
+    // Play the shoot sound
+    private void PlayShootSound()
+    {
+        if (shootSound != null && AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayOneShotAudio(shootSound);
+        }
+        else
+        {
+            Debug.LogWarning("Shoot sound or AudioManager is missing!");
+        }
+    }
+
+    // Play the die sound
+    private void PlayDieSound()
+    {
+        if (dieSound != null && AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayOneShotAudio(dieSound);
+        }
+        else
+        {
+            Debug.LogWarning("Die sound or AudioManager is missing!");
         }
     }
 

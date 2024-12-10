@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
-    //******************************************************CREATED WITH CHATGPT***************************************************************
+    
     public static SpawnManager Instance;
     public Vector3 spawnPoint = Vector3.zero; // Local spawn point for the current scene
 
@@ -62,6 +62,16 @@ public class SpawnManager : MonoBehaviour
         else if (scene.name == "Level6")
         {
             spawnPoint = new Vector3(-0.4f, -0.5f, 0); // Example spawn point for Level2
+            Debug.Log("Spawn point for Level2 set to: " + spawnPoint);
+        }
+        else if (scene.name == "Level7")
+        {
+            spawnPoint = new Vector3(10f, 15f, 0); // Example spawn point for Level2
+            Debug.Log("Spawn point for Level2 set to: " + spawnPoint);
+        }
+        else if (scene.name == "Level8")
+        {
+            spawnPoint = new Vector3(10f, 15f, 0); // Example spawn point for Level2
             Debug.Log("Spawn point for Level2 set to: " + spawnPoint);
         }
     }

@@ -7,6 +7,9 @@ public class NormalRock : MonoBehaviour
     public GameObject healthPickupPrefab; // Prefab for the health pickup
     public float spawnChance = 0.5f;      // 50% chance to spawn the health pickup
 
+    [Header("Audio Settings")]
+    public AudioClip destroySound;       // Sound to play when the rock is destroyed
+
     private int hitCount = 0;
     private bool canTakeHit = true; // Cooldown flag
     public float hitCooldown = 1f; // Cooldown duration in seconds
@@ -19,8 +22,9 @@ public class NormalRock : MonoBehaviour
 
         if (hitCount == 1)
         {
-            SpawnHealthPickup(); // Attempt to spawn the health pickup
-            Destroy(gameObject); // Destroy the rock
+            PlayDestroySound();   // Play destruction sound
+            SpawnHealthPickup();  // Attempt to spawn the health pickup
+            Destroy(gameObject);  // Destroy the rock
         }
 
         StartCoroutine(HitCooldown());
@@ -38,6 +42,18 @@ public class NormalRock : MonoBehaviour
         if (healthPickupPrefab != null && Random.value < spawnChance)
         {
             Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+        }
+    }
+
+    private void PlayDestroySound()
+    {
+        if (destroySound != null && AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayOneShotAudio(destroySound); // Call the AudioManager to play sound
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager or destroySound is missing!");
         }
     }
 }

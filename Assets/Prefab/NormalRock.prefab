@@ -138,5 +138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPickupPrefab: {fileID: 2640766257685142671, guid: fcab4f9094c91ec4ead5b386005a3924, type: 3}
-  spawnChance: 0.1
+  spawnChance: 0.2
+  destroySound: {fileID: 8300000, guid: 6444f5aa19479754fb548e16ce0449d4, type: 3}
   hitCooldown: 0.4

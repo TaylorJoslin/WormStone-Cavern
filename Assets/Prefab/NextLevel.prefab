@@ -81,3 +81,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ffa8b999f9361049b4a2d931a94eb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelChangeSound: {fileID: 8300000, guid: 4afec0ae23b374f4a9ad77d82d8868df, type: 3}

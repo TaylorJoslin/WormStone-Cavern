@@ -144,3 +144,4 @@ MonoBehaviour:
   spawnpoint: {fileID: 0}
   animator: {fileID: 0}
   hitCooldown: 0.5
+  hitSound: {fileID: 8300000, guid: 6444f5aa19479754fb548e16ce0449d4, type: 3}
